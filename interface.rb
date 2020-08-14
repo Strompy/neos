@@ -55,7 +55,7 @@ class Interface
   end
 
   def self.create_rows(asteroid_data, column_info)
-    rows = asteroid_data.each { |asteroid| format_row_data(asteroid, column_info) }
+    asteroid_data.each { |asteroid| format_row_data(asteroid, column_info) }
   end
 
   def self.format_date
